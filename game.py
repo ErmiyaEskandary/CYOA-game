@@ -9,6 +9,7 @@ See the GNU General Public License for more details.
 You should have received a copy of the GNU General Public License along with this program.
 If not, see <http://www.gnu.org/licenses/>./gpl-howto.html
 '''
+version_Number = "0.0.1"
 # Game "data" - rooms and doors to get to different rooms in a way
 pages = {
     'yourbedroom': {
@@ -283,6 +284,7 @@ pages = {
     },
     'INTRODUCTION': "Go Get The Mail! \n You have a simple task -- go and get the mail. Oh, it sounds easy, but could you ever imagine how many different things could get in your way?",
     'COPYRIGHT': "2016, by Ermiya Eskandary",
+    'VERSION': version_Number,
     'OUTRO': "Thanks for playing!",
 }
 
@@ -301,7 +303,9 @@ def main_Function(pages, startpage):
     # Display the page "INTRODUCTION"
     print(pages.get("INTRODUCTION"))
     # Display the page "COPYRIGHT"
-    print("\n\nCopyright: " + pages.get("COPYRIGHT") + "\n")
+    print("\nCopyright: " + pages.get("COPYRIGHT") + "\n")
+    # Display the page "VERSION"
+    print("\n\nVersion: " + pages.get("VERSION") + "\n")
 
     # Starting page
     page = pages[startpage]
