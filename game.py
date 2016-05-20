@@ -9,7 +9,7 @@ See the GNU General Public License for more details.
 You should have received a copy of the GNU General Public License along with this program.
 If not, see <http://www.gnu.org/licenses/>./gpl-howto.html
 '''
-version_Number = "0.0.1"
+version_Number = "0.0.2"
 # Game "data" - rooms and doors to get to different rooms in a way
 pages = {
     'yourbedroom': {
@@ -305,7 +305,7 @@ def main_Function(pages, startpage):
     # Display the page "COPYRIGHT"
     print("\nCopyright: " + pages.get("COPYRIGHT") + "\n")
     # Display the page "VERSION"
-    print("\n\nVersion: " + pages.get("VERSION") + "\n")
+    print("Version: " + pages.get("VERSION") + "\n")
 
     # Starting page
     page = pages[startpage]
